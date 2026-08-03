@@ -8,23 +8,40 @@
     <style>
         body {
             background-color: rgb(0, 0, 255); 
-            color: white; /* Para que los textos se lean sobre el fondo azul */
+            color: white; /* Cambiado a blanco para que los textos sean legibles sobre el fondo azul */
             font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            text-align: center;
+            margin-top: 20px;
         }
         th, td {
-            padding: 10px;
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
         }
         img {
             width: 100px;
             height: 100px;
             display: block;
-            margin: 0 auto;
-            border: none;
+            margin: 0 auto 10px auto; /* Centra la imagen y le da espacio abajo */
+            border: 2px solid white; /* Un pequeño borde para resaltar la imagen */
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        img:hover {
+            transform: scale(1.05); /* Efecto visual al pasar el mouse */
+        }
+        a {
+            color: #ffff00; /* Texto amarillo para los enlaces */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -43,31 +60,55 @@
             <th>Horarios</th>
             <th>Proyecto de vida</th>
         </tr>
-        <!-- Fila de imágenes con sus enlaces -->
+        <!-- Fila de imágenes y enlaces combinados -->
         <tr>
             <td>
-                <a href="nacimiento.html"><img src="img/nacimiento.png" alt="nacimiento"></a>
+                <a href="nacimiento.html">
+                    <img src="img/nacimiento.png" alt="nacimiento">
+                    Ver Nacimiento
+                </a>
             </td>
             <td>
-                <a href="familia.html"><img src="img/familia.png" alt="familia"></a>
+                <a href="familia.html">
+                    <img src="img/familia.png" alt="familia">
+                    Ver Familia
+                </a>
             </td>
             <td>
-                <a href="educacion.html"><img src="img/educacion.jpeg" alt="educación"></a>
+                <a href="educacion.html">
+                    <img src="img/educacion.jpeg" alt="educación">
+                    Ver Educación
+                </a>
             </td>
             <td>
-                <a href="amigos.html"><img src="img/amigos.jpeg" alt="amigos"></a>
+                <a href="amigos.html">
+                    <img src="img/amigos.jpeg" alt="amigos">
+                    Ver Amigos
+                </a>
             </td>
             <td>
-                <a href="hobbies.html"><img src="img/hobbies.png" alt="hobbies"></a>
+                <a href="hobbies.html">
+                    <img src="img/hobbies.png" alt="hobbies">
+                    Ver Hobbies
+                </a>
             </td>
             <td>
-                <a href="musica.html"><img src="img/musica.png" alt="música"></a>
+                <a href="musica.html">
+                    <img src="img/musica.png" alt="música">
+                    Ver Música
+                </a>
             </td>
             <td>
-                <a href="horario.html"><img src="img/horario.png" alt="horarios"></a>
+                <a href="horario.html">
+                    <img src="img/horario.png" alt="horarios">
+                    Ver Horarios
+                </a>
             </td>
             <td>
-                <a href="proyecto_vida.html"><img src="img/proyecto_vida.jpeg" alt="proyecto de vida"></a>
+                <a href="proyecto_vida.html">
+                    <img src="img/proyecto_vida.jpeg" alt="proyecto de vida">
+                    Ver Proyecto
+                </a>
             </td>
         </tr>
     </table>
